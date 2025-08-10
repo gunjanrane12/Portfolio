@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAI - Gunjan Rane</title>
+    <!-- Favicon for the browser tab -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='100' height='100' rx='20' ry='20' fill='none' stroke='url(%23gradient)' stroke-width='4'/%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%236366f1;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%23a855f7;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='50' y='65' font-family='Inter, sans-serif' font-size='50' font-weight='bold' text-anchor='middle' fill='%23ffffff'%3EGR%3C/text%3E%3C/svg%3E">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            /* Slate-900 */
+            color: #e2e8f0;
+            /* Slate-200 */
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card {
+            background-color: #1e293b;
+            /* Slate-800 */
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 bg-[#0f172a] bg-opacity-90 backdrop-filter backdrop-blur-md z-50 shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2">
+                <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="0" y="0" width="100" height="100" rx="20" ry="20" fill="url(#logoGradient)" />
+                    <text x="50" y="65" font-family="'Inter', sans-serif" font-size="50" font-weight="bold"
+                        text-anchor="middle" fill="#ffffff">GR</text>
+                </svg>
+                <span class="hidden sm:inline text-2xl font-bold text-white">Gunjan Rane</span>
+            </a>
+            <a href="/" class="text-white hover:text-violet-400 transition-colors">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Portfolio
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-16">
+        <!-- Project Hero Section -->
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-bold text-gradient">MedAI</h1>
+            <p class="mt-4 text-xl text-slate-400">AI-Based Disease Diagnosis System</p>
+        </section>
+
+        <!-- Project Description -->
+        <section id="description" class="py-8">
+            <h2 class="text-3xl font-bold text-center mb-6">Project Overview</h2>
+            <div class="max-w-4xl mx-auto card p-6 rounded-xl shadow-lg">
+                <ul class="list-disc list-inside space-y-4 text-slate-300">
+                    <li>Developed an AI-powered healthcare assistant using machine learning to predict potential
+                        diseases from user-provided symptoms and suggest basic, non-diagnostic remedies.</li>
+                    <li> Implemented a Python-based prediction model trained on medical symptom–disease datasets for
+                        accurate classification.</li>
+                    <li> Built a real-time web interface to collect user inputs and display predictions instantly.</li>
+                    <li> Incorporated a knowledge base to provide lifestyle tips, precautionary measures, and general
+                        healthcare advice for common conditions.</li>
+                    <li> Delivered the system via Flask backend with an intuitive HTML, CSS, and JavaScript frontend,
+                        making it accessible as both an educational and assistive tool.</li>
+                    <li><strong class="text-violet-400">Tech Stack:</strong> Python, HTML, JavaScript</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Project Images Section -->
+        <section id="images" class="py-8">
+            <h2 class="text-3xl font-bold text-center mb-6">Project Visuals</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="card p-4 rounded-xl shadow-lg text-center">
+                    <img src="https://placehold.co/600x400/2d3748/e2e8f0?text=MedAI+Chatbot+Interface"
+                        alt="MedAI Chatbot Interface" class="rounded-lg w-full">
+                    <p class="mt-2 text-slate-400 text-sm">A screenshot of the chatbot interface for disease diagnosis.
+                    </p>
+                </div>
+                <div class="card p-4 rounded-xl shadow-lg text-center">
+                    <img src="https://placehold.co/600x400/2d3748/e2e8f0?text=Diagnosis+Output" alt="Diagnosis Output"
+                        class="rounded-lg w-full">
+                    <p class="mt-2 text-slate-400 text-sm">An example of a disease prediction and suggested remedies.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Project Link Section -->
+        <!-- <section class="text-center py-8">
+            <a href="#" target="_blank"
+                class="px-8 py-4 rounded-full font-semibold transition-transform duration-200 transform hover:scale-105 border border-violet-600 text-violet-400 hover:bg-violet-600 hover:text-white">
+                View Live Project
+                <i class="fas fa-external-link-alt ml-2"></i>
+            </a>
+        </section> -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1e293b] py-6 text-center text-slate-500">
+        <p>&copy; 2024 Gunjan Rane. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
