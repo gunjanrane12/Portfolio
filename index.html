@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunjan Rane - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Slate-900 */
+            color: #e2e8f0; /* Slate-200 */
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background-color: #1e293b; /* Slate-800 */
+        }
+        .btn {
+            @apply px-6 py-3 rounded-full font-semibold transition-transform duration-200 transform hover:scale-105;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 bg-[#0f172a] bg-opacity-90 backdrop-filter backdrop-blur-md z-50 shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gradient">Gunjan Rane</a>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#about" class="hover:text-violet-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-violet-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-violet-400 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-violet-400 transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-violet-400 transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="text-2xl md:hidden">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1e293b] p-4 text-center">
+            <a href="#about" class="block py-2 hover:text-violet-400 transition-colors">About</a>
+            <a href="#experience" class="block py-2 hover:text-violet-400 transition-colors">Experience</a>
+            <a href="#projects" class="block py-2 hover:text-violet-400 transition-colors">Projects</a>
+            <a href="#skills" class="block py-2 hover:text-violet-400 transition-colors">Skills</a>
+            <a href="#contact" class="block py-2 hover:text-violet-400 transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-16">
+
+        <!-- About/Hero Section -->
+        <section id="about" class="flex flex-col md:flex-row items-center justify-between min-h-screen py-16 text-center md:text-left">
+            <div class="md:w-3/5">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                    Hello, I'm <span class="text-gradient">Gunjan Rane</span>
+                </h1>
+                <p class="mt-4 md:mt-6 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto md:mx-0">
+                    Enthusiastic about creating meaningful AI solutions and web platforms that address real-world issues. Proficient in full-stack web development and machine learning, with hands-on experience in real-world projects and internships.
+                </p>
+                <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                    <a href="#projects" class="btn bg-violet-600 text-white shadow-lg shadow-violet-500/50 hover:bg-violet-700">View Projects</a>
+                    <a href="#contact" class="btn border border-violet-600 text-violet-400 hover:bg-violet-600 hover:text-white">Contact Me</a>
+                </div>
+            </div>
+            <div class="md:w-2/5 mt-10 md:mt-0 flex justify-center">
+                <!-- Placeholder for a profile picture -->
+                <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-600 rounded-full flex items-center justify-center overflow-hidden border-4 border-violet-600">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQGdigd7CXFKDQ/profile-displayphoto-scale_400_400/B4EZgzVh9jGwAg-/0/1753207952140?e=1757548800&v=beta&t=H43rGhGGKqP8PgFJoYglmPB8Yr4JA3pG_biz6Q7KvFQ" alt="Gunjan Rane" class="object-cover w-full h-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Professional Experience</h2>
+            <div class="max-w-3xl mx-auto card p-6 md:p-8 rounded-xl shadow-lg">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white">Software Development Intern</h3>
+                        <p class="text-lg text-violet-400">Life Relier Infosoft Pvt. Ltd.</p>
+                    </div>
+                    <span class="mt-2 md:mt-0 text-slate-400 text-sm">Jan 2025 - Apr 2025</span>
+                </div>
+                <ul class="list-disc list-inside space-y-2 text-slate-300">
+                    <li>Implemented backend improvements in SQL Server, Python (Django) and .NET which led to a 15% reduction in latency for retrieval of information by healthcare web application users.</li>
+                    <li>Architected and improved healthcare web solutions from front-to-back by working closely with developers and stakeholders.</li>
+                    <li>Identified and rooted out critical defects of backend logic and fine-tuned platform stability and development iteration cycle.</li>
+                    <li>Proven flexibility in learning new tools and processes to quickly become productive team member.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">My Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- QuickFix Project Card -->
+                <div class="card p-6 rounded-xl shadow-lg flex flex-col justify-between transition-transform duration-200 transform hover:scale-105">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">QuickFix</h3>
+                        <p class="text-sm text-violet-400 mt-1">On-Demand Home Service Platform</p>
+                        <p class="mt-4 text-slate-300">Designed, enforced and integrated a web application where users access screened service professionals for jobs like plumbing, electrical, and carpentry.</p>
+                        <p class="mt-4 text-sm text-slate-400">
+                            <strong>Tech Stack:</strong> Node.js, Express.js, HTML, CSS, JavaScript, MySQL
+                        </p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#" class="inline-block btn bg-violet-600 text-white hover:bg-violet-700 w-full text-center">
+                            View Project
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FoodShare Project Card -->
+                <div class="card p-6 rounded-xl shadow-lg flex flex-col justify-between transition-transform duration-200 transform hover:scale-105">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">FoodShare</h3>
+                        <p class="text-sm text-violet-400 mt-1">Food Donation & Redistribution Platform</p>
+                        <p class="mt-4 text-slate-300">Designed a social impact platform that bridges the gap between restaurants with surplus food and NGOs serving underserved communities.</p>
+                        <p class="mt-4 text-sm text-slate-400">
+                            <strong>Tech Stack:</strong> Node.js, Express.js, HTML, CSS, JavaScript, MySQL
+                        </p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#" class="inline-block btn bg-violet-600 text-white hover:bg-violet-700 w-full text-center">
+                            View Project
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SignVerse Project Card -->
+                <div class="card p-6 rounded-xl shadow-lg flex flex-col justify-between transition-transform duration-200 transform hover:scale-105">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">SignVerse</h3>
+                        <p class="text-sm text-violet-400 mt-1">Indian Hand Sign Language Translator</p>
+                        <p class="mt-4 text-slate-300">Created an AI based Indian hand sign language (IHSL) translator using image processing and deep learning to recognize and interpret letters and digits of Indian hand signs.</p>
+                        <p class="mt-4 text-sm text-slate-400">
+                            <strong>Tech Stack:</strong> Python, TensorFlow, OpenCV, Flask, HTML, CSS, JavaScript
+                        </p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#" class="inline-block btn border border-violet-600 text-violet-400 hover:bg-violet-600 hover:text-white w-full text-center">
+                            View Project
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brain Tumor Detection Project Card -->
+                <div class="card p-6 rounded-xl shadow-lg flex flex-col justify-between transition-transform duration-200 transform hover:scale-105">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Brain Tumor Detection</h3>
+                        <p class="text-sm text-violet-400 mt-1">Medical Image Classification using CNN</p>
+                        <p class="mt-4 text-slate-300">Enhanced a deep learning model for accurate classification of MRI scans as Tumor and Non-Tumor detections using CNN architecture.</p>
+                        <p class="mt-4 text-sm text-slate-400">
+                            <strong>Tech Stack:</strong> Python, TensorFlow, OpenCV, NumPy, Matplotlib
+                        </p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#" class="inline-block btn border border-violet-600 text-violet-400 hover:bg-violet-600 hover:text-white w-full text-center">
+                            View Project
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Technical Skills</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Skill Category: Programming Languages -->
+                <div class="card p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold text-white mb-4">Languages</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <!-- Skill Category: Web Development -->
+                <div class="card p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold text-white mb-4">Web Dev</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li>HTML, CSS</li>
+                        <li>Django, Flask</li>
+                        <li>Node.js, Express.js</li>
+                    </ul>
+                </div>
+                <!-- Skill Category: Databases -->
+                <div class="card p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold text-white mb-4">Databases</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>SQL Server</li>
+                    </ul>
+                </div>
+                <!-- Skill Category: Frameworks & Libraries -->
+                <div class="card p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold text-white mb-4">Libraries & ML</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li>OpenCV</li>
+                        <li>TensorFlow</li>
+                        <li>PyTorch, NumPy</li>
+                        <li>Pandas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
+                I'm currently open to new opportunities. Feel free to reach out!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
+                <a href="mailto:gunjanrane2003@gmail.com" class="flex items-center space-x-2 text-violet-400 hover:text-violet-500 transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                    <span>gunjanrane2003@gmail.com</span>
+                </a>
+                <a href="tel:+919307153044" class="flex items-center space-x-2 text-violet-400 hover:text-violet-500 transition-colors">
+                    <i class="fas fa-phone-alt text-xl"></i>
+                    <span>+91 9307153044</span>
+                </a>
+                <a href="https://linkedin.com/in/gunjanrane" target="_blank" class="flex items-center space-x-2 text-violet-400 hover:text-violet-500 transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                    <span>linkedin.com/in/gunjanrane</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1e293b] py-6 text-center text-slate-500">
+        <p>&copy; 2024 Gunjan Rane. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
